@@ -1,36 +1,23 @@
 {
   "name": "POC Filter Reader",
+  "organization": "Kalbe Consumer Health - POC",
+  "description": "POC untuk cek apakah Community Visualization bisa membaca filter state yang aktif di Looker Studio, sebelum dikembangkan lebih lanjut untuk integrasi API.",
   "logoUrl": "https://www.gstatic.com/images/branding/product/1x/looker_studio_48dp.png",
-  "description": "POC untuk cek apakah Community Viz bisa baca filter state di Looker Studio",
-  "supportUrl": "",
+  "packageUrl": "https://jazzlynamelia.github.io/kch-poc-looker-viz/",
+  "organizationUrl": "https://jazzlynamelia.github.io/kch-poc-looker-viz/",
+  "supportUrl": "https://jazzlynamelia.github.io/kch-poc-looker-viz/",
+  "devMode": true,
   "components": [
     {
       "id": "pocFilterReader",
       "name": "POC Filter Reader",
+      "description": "Cek filter state yang aktif di halaman, untuk validasi sebelum integrasi API kirim parameter filter.",
       "iconUrl": "https://www.gstatic.com/images/branding/product/1x/looker_studio_48dp.png",
-      "description": "Cek filter state yang aktif di halaman",
       "resource": {
         "js": "viz.js",
+        "config": "viz-config.json",
         "css": "viz.css"
-      },
-      "data": [
-        {
-          "id": "conceptData",
-          "label": "Dummy field (wajib diisi, tidak dipakai)",
-          "elements": [
-            {
-              "id": "dummyDimension",
-              "type": "DIMENSION",
-              "options": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        }
-      ],
-      "style": [],
-      "interactions": []
+      }
     }
   ]
 }
